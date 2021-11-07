@@ -1,0 +1,80 @@
+.inputFormContainer , .inputFormOverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+}
+.inputFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    z-index: 1;
+}
+.inputForm {
+    width: 320px;
+    background-color: white;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    border-radius: 8px;
+}
+.inputForm h1 {
+    font-size: 27px;
+    margin: 7px 0;
+}
+.errMsg {
+    color: red;
+    font-size: 18px;
+    height: 38px;
+    width: 280px;
+    text-align: center;
+    overflow: hidden;
+}
+.inputForm input, .inputForm select, option {
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: none;
+    border: solid 1px #2e2e2ea8;
+    border-radius: 3px;
+    margin: 6px 0;
+    transition: .3s;
+    font-size: 16px;
+    color: #383838;
+}
+.inputForm input::placeholder {
+    color: #7e7e7e;
+}
+.inputForm input:focus {
+    border-color: #0087ff;
+}
+.select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.dash {
+    width: 25px;
+    height: 2px;
+    background:#2e2e2ea8;
+}
+.other {
+    width: 50% !important;
+    transition: .7s;
+}
+input:disabled{
+    opacity: .5;
+}
+.inputForm button {
+    margin-top: 17px;
+}
+.inputForm button:hover {
+    background-color: #0074da;
+}
+.fail {
+    color : red;
+}
